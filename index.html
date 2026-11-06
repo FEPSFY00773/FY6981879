@@ -93,18 +93,21 @@
 
   <div class="paper-section">
     <h3 id="Introduction">Introduction</h3>
+    <pre id="Introduction_Text">
     <p>
         Nuclear fusion, the process that powers the sun, could potentially support the demand for clean and sustainable energy around the world. Unlike nuclear fission reactors which generate power from splitting heavy atoms apart, fusion energy involves fusing light atomic nuclei together under extreme conditions. Although fusion power always seems to be 30 years away, we inch closer to perfecting our designs and methods in achieving this sustainable power. But how do we actually produce this energy, how do reactor designs compare, and could we take it a step further and create heavier elements? 
 
     </p>
+    </pre>
     </div>
   <div class="paper-section">
     <h3 id="Analysis and discussion">Analysis and discussion</h3>
+    <pre id="Analysis_Text">
     <p>
       For billions of years, our sun has been undergoing one of the most violent reactions in the universe – nuclear fusion. At every moment, its gravitational core crushes millions of tons of hydrogen together, generating plasma and releasing energy that heats our entire solar system. Bringing this same force to our planet means re-creating these conditions without the gigantic gravitational force to contain the plasma. Instead, we solve the problem of handling this plasma using electromagnets. 
       
     </p>
-
+    </pre>
     <p>
       This is where fusion reactors come in. The most famous and widely used design is the tokamak - a toroidal (doughnut shape) chamber surrounded by gigantic electromagnets. In the middle of this ring is a central magnetic pillar called the central solenoid. To start up and bring the reactor to life, we go through a series of intricate processes, first we begin with injecting a small amount of hydrogen fuel into the clean vacuum vessel. Then a high-voltage electric pulse is fired through the chamber, stripping electrons from the gas atoms to form a supercharged state of matter, plasma (ITER, What is a tokamak?). To heat the initial plasma, the central solenoid pushes millions of amps of electrical current directly through it. This is known as Ohmic heating, a resistive process that warms the gas up to millions of degrees. However, as the plasma gets hotter, its electrical resistance drops, therefore making the Ohmic heating less effective. In order to reach the target temperature of around 150 million degrees Celsius, reactors must fire auxiliary heating systems, such as neutral particle accelerators and high-power radio-frequency waves, propelling the fuel into full fusion ignition (ITER, External heating systems 2024).
       
@@ -191,8 +194,8 @@
   // Function to calculate and display total word count from selected sections
   function displayTotalWordCount() {
     // Calculate word count for each section and accumulate the total
-    const IntroductionCount = displayWordCount("Introduction");
-    const AnalysisCount = displayWordCount("Analysis and discussion");
+    const IntroductionCount = displayWordCount("Introduction_Text");
+    const AnalysisCount = displayWordCount("Analysis_Text");
     // Calculate the sum of all selected sections
     const totalWordCount = IntroductionCount + AnalysisCount;
     // Display the total word count
