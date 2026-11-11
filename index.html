@@ -83,6 +83,36 @@
     margin: 0 0 1.2em 0;
     text-align: left;
   }
+    .figure-row {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 16px;
+  align-items: start;
+  margin: 1rem 0;
+}
+
+.figure-row figure {
+  margin: 0;
+}
+
+.figure-row img {
+  display: block;
+  width: 100%;
+  height: 190px;
+  object-fit: contain;
+}
+
+.figure-row figcaption {
+  margin-top: 6px;
+  font-size: 0.9rem;
+  line-height: 1.4;
+}
+
+@media (max-width: 560px) {
+  .figure-row {
+    grid-template-columns: 1fr;
+  }
+}
 </style>
     <div class="paper-section">
       <h3 id="Abstract">Abstract</h3>
@@ -130,36 +160,7 @@
           <img src="stellarator.png" alt="Wendelstein 7-X reactor">
             <figcaption>Figure 2: A model of the largest stellarator reactor in the world, the Wendelstein.</figcaption>
         </figure>
-        .figure-row {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-  gap: 16px;
-  align-items: start;
-  margin: 1rem 0;
-}
-
-.figure-row figure {
-  margin: 0;
-}
-
-.figure-row img {
-  display: block;
-  width: 100%;
-  height: 190px;
-  object-fit: contain;
-}
-
-.figure-row figcaption {
-  margin-top: 6px;
-  font-size: 0.9rem;
-  line-height: 1.4;
-}
-
-@media (max-width: 560px) {
-  .figure-row {
-    grid-template-columns: 1fr;
-  }
-}
+  
       </div>
 
       <p>
